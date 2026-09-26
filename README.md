@@ -35,6 +35,12 @@ An independent desktop launcher and mod manager for **Kitten Space Agency** — 
 
 This app is **not affiliated with RocketWerkz or Ahwoo**. KSA and StarMap are separate products and are not bundled. Community mods execute code inside the game; inclusion in the catalog is not a security audit or a promise of compatibility.
 
+## Download disclaimer
+
+**All community mods are downloaded and used at your own risk.** You are responsible for any damage, data loss, or security issues caused by third-party mods. Review the public source and compatibility notes before installing anything.
+
+KSA Control Center does not bundle, re-host, or silently install community mods. When you choose to install a catalog entry, it downloads the author’s pinned GitHub release directly. See the ready-to-post [forum information page](docs/FORUM_POST.md) for the required release details.
+
 ## Run from source
 
 Install Node.js 22 or newer. In this folder:

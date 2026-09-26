@@ -24,4 +24,10 @@ The Windows file is unsigned, so Windows may show a SmartScreen warning. Only do
 
 ## Notes
 
-The Windows file is unsigned and may show a SmartScreen warning. This is an independent community tool, not affiliated with RocketWerkz or Ahwoo. KSA and community mods are not included. Read each mod's compatibility notes before enabling it.
+The Windows file is unsigned and may show a SmartScreen warning. This is an independent community tool, not affiliated with RocketWerkz or Ahwoo. KSA and community mods are not included.
+
+### Download disclaimer
+
+**All community mods are downloaded and used at your own risk.** You are responsible for any damage, data loss, or security issues caused by third-party mods. Always review source code and be cautious about what you run.
+
+KSA Control Center does not bundle or re-host community mods. Optional catalog installs download the relevant author’s original pinned GitHub release directly. The complete public source code, MIT license, and third-party attribution are available in the [project repository](https://github.com/isaiah67331-lgtm/KSA-Control-Center).
