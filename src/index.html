@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>KSA Control Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home" aria-label="Control Center home"><span class="brand-mark" data-icon="orbit"></span><span>CONTROL<br><strong>CENTER<span class="accent">.</span></strong></span></a>
+    <div class="nav-caption">YOUR SPACE PROGRAM</div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" data-page="home"><span data-icon="home"></span>Overview</button>
+      <button class="nav-item" data-page="discover"><span data-icon="compass"></span>Discover mods<span class="nav-count">9</span></button>
+      <button class="nav-item" data-page="library"><span data-icon="grid"></span>Your library<span id="library-count" class="nav-count">0</span></button>
+      <button class="nav-item" data-page="settings"><span data-icon="sliders"></span>Settings</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="local-dot"></div><div>Stored on this device<small id="platform">Desktop app</small></div></div>
+  </aside>
+  <main>
+    <div class="topbar"><div class="breadcrumb">KITTEN SPACE AGENCY <span>/</span> <b id="crumb">Overview</b></div><span class="edition">COMMUNITY EDITION <span id="version">0.2</span></span></div>
+    <section id="home" class="page active" aria-labelledby="home-title">
+      <div class="page-heading"><div><p class="eyebrow">ALL SYSTEMS, ONE PLACE</p><h1 id="home-title">Your next mission starts here.</h1></div><button class="text-button refresh"><span data-icon="refresh"></span>Refresh</button></div>
+      <div class="hero">
+        <div class="hero-copy"><span class="badge"><i></i>KITTEN SPACE AGENCY</span><h2>A little curiosity.<br>An entire universe.</h2><p>Your game, your mods, your next great idea.<br>Get everything ready for launch.</p><button class="primary launch"><span data-icon="play"></span><span>Launch KSA</span><span class="arrow">↗</span></button><div id="launch-caption" class="hero-caption">Checking your installation…</div></div>
+        <img class="orbital-art" src="../assets/orbits.svg" alt="Warm orange planet and a spacecraft tracing an orbit">
+        <span class="hero-coordinates">CC / FLIGHT DECK <span>001</span></span>
+      </div>
+      <div class="status-strip">
+        <div><span class="stat-label">FLIGHT STATUS</span><strong id="game-status">Checking setup</strong></div>
+        <div><span class="stat-label">ACTIVE MODS</span><strong><span id="enabled-count">0</span> <small>in your loadout</small></strong></div>
+        <div><span class="stat-label">GRAPHICS PROFILE</span><strong id="gpu-status">Automatic</strong></div>
+      </div>
+      <div id="setup-notice" class="notice" hidden></div>
+      <div class="section-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h2>More ways to explore.</h2></div><button class="text-button" data-page="discover">Explore all mods <span>↗</span></button></div>
+      <div id="featured" class="mod-grid featured"></div>
+      <div class="quick-tools"><button data-open="mods"><span data-icon="folder"></span>Mod folder</button><button data-open="logs"><span data-icon="file"></span>Launch logs</button><button class="backup"><span data-icon="archive"></span>Back up loadout</button><button class="close-game"><span data-icon="stop"></span>Close KSA</button></div>
+    </section>
+    <section id="discover" class="page" aria-labelledby="discover-title">
+      <div class="page-heading"><div><p class="eyebrow">BUILT BY THE COMMUNITY</p><h1 id="discover-title">Make room for more.</h1><p class="intro">Nine open-source mods. New possibilities for every mission.</p></div><span class="pill">5 new additions</span></div>
+      <div class="search-row"><label class="search"><span data-icon="search"></span><input id="search" type="search" placeholder="Search mods, creators, or features" aria-label="Search mods"><kbd>/</kbd></label><span id="result-count" class="muted">9 mods</span></div>
+      <div id="filters" class="filters" role="group" aria-label="Filter by category"><button class="selected" data-category="All">All mods</button><button data-category="Flight">Flight</button><button data-category="Utilities">Utilities</button><button data-category="Parts">Parts</button><button data-category="Frameworks">Frameworks</button></div>
+      <div id="catalog" class="mod-grid"></div><div id="search-empty" class="empty" hidden><h2>No matches this time.</h2><p>Try another word or select All mods.</p></div>
+      <p class="footnote">Community projects, downloaded from their authors' GitHub releases. Check each mod's build notes before enabling it.</p>
+    </section>
+    <section id="library" class="page" aria-labelledby="library-title">
+      <div class="page-heading"><div><p class="eyebrow">YOUR LOADOUT</p><h1 id="library-title">Ready when you are.</h1><p class="intro">Enable the mods you want on your next flight.</p></div><button class="secondary backup"><span data-icon="archive"></span>Back up mods</button></div>
+      <div class="library-toolbar"><span id="library-summary">Installed mods</span><button id="reset" class="text-button">Disable all mods</button></div><div id="installed" class="installed-list"></div>
+      <div id="library-empty" class="empty" hidden><span data-icon="grid"></span><h2>Your next upgrade is waiting.</h2><p>Install a mod from Discover to get started.</p><button class="primary" data-page="discover">Find your first mod ↗</button></div>
+      <div class="notice"><span data-icon="info"></span><p>New mods install disabled. Changes take effect on the next launch. Backups include your mods and enabled list.</p></div>
+    </section>
+    <section id="settings" class="page" aria-labelledby="settings-title">
+      <div class="page-heading"><div><p class="eyebrow">SET UP YOUR SPACE</p><h1 id="settings-title">A home for everything.</h1><p class="intro">Connect your game and choose how it launches.</p></div></div>
+      <div class="settings-panel"><div class="section-heading"><h2>Folders</h2></div><div id="paths"></div></div>
+      <div class="settings-panel"><h2>Graphics profile</h2><p class="muted">Intel Arc on Linux uses the available Mesa Intel driver and FIFO presentation. Other profiles use your system driver.</p><label class="select-label" for="gpu">Launch profile</label><select id="gpu"><option>Auto-detect</option><option>Intel Arc</option><option>AMD Radeon</option><option>NVIDIA</option><option>System default</option></select><button id="save-gpu" class="secondary">Save profile</button></div>
+      <div class="settings-panel"><h2>Backups & logs</h2><p class="muted">Find saved loadouts, previous manifests, and launch diagnostics.</p><button class="secondary" data-open="backups">Open backups</button> <button class="secondary" data-open="logs">Open logs</button></div>
+      <div class="settings-panel about"><span class="brand-mark" data-icon="orbit"></span><div><h2>KSA Control Center</h2><p>Independent, open-source companion for Kitten Space Agency.</p><small>Linux tested · Windows build workflow included · Not affiliated with RocketWerkz or Ahwoo</small></div></div>
+    </section>
+  </main>
+  <dialog id="mod-detail"><button id="detail-close" class="icon-button" aria-label="Close mod details">×</button><div id="detail-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>

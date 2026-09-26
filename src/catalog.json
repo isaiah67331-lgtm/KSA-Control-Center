@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ModMenu", "name": "ModMenu", "category": "Utilities", "glyph": "grid",
+    "description": "A home for mod controls, right inside the game's menu bar.",
+    "repo": "MrJeranimo/ModMenu", "version": "0.2.2", "asset": "ModMenu.zip",
+    "tag": "v0.2.2", "license": "MIT", "dependencies": [],
+    "compatibility": "Verified loading on Fedora with KSA 2026.9.22.5482."
+  },
+  {
+    "id": "AdvancedFlightComputer", "name": "Advanced Flight Computer", "category": "Flight", "glyph": "orbit",
+    "description": "Plan maneuvers, guide your ascent, and bring your spacecraft home.",
+    "repo": "Maximilian-Nesslauer/KSA-AdvancedFlightComputer", "version": "0.8.1",
+    "preview": {"file":"afc.png","alt":"Advanced Flight Computer planning a multi-pass transfer from Earth to Luna","kind":"Author screenshot"},
+    "tag": "v0.8.1", "asset": "AdvancedFlightComputer.zip", "license": "MIT", "dependencies": [],
+    "conflicts": ["PoweredGuidance", "AutoStage"],
+    "compatibility": "KittenExtensions enables additional features. Check the author's release notes for your KSA build."
+  },
+  {
+    "id": "DeltaVMap", "name": "Delta-V Map", "category": "Flight", "glyph": "route",
+    "description": "Find your next destination with a live delta-v map and transfer windows.",
+    "repo": "Maximilian-Nesslauer/KSA-DeltaVMap", "version": "1.2.7", "tag": "v1.2.7",
+    "preview": {"file":"deltav.png","alt":"Delta-V Map showing transfer costs from Earth","kind":"Author screenshot"},
+    "asset": "DeltaVMap.zip", "license": "MIT", "dependencies": [],
+    "compatibility": "Author validated against KSA 2026.9.22.5482."
+  },
+  {
+    "id": "PoweredGuidance", "name": "Powered Guidance", "category": "Flight", "glyph": "target",
+    "description": "Automated powered ascent, descent, and precision landings.",
+    "repo": "cairn5/PoweredGuidance", "version": "0.4.0", "tag": "v0.4.0",
+    "asset": "PoweredGuidance-0.4.0.zip", "license": "See source (README and repository license differ)", "dependencies": [],
+    "conflicts": ["AdvancedFlightComputer"], "compatibility": "Overlaps with Advanced Flight Computer. Enable one at a time."
+  },
+  {
+    "id": "MeasureTools", "name": "Measure Tools", "category": "Utilities", "glyph": "ruler",
+    "description": "Measure distances, angles, and spacecraft parts with precise snapping.",
+    "repo": "Maximilian-Nesslauer/KSA-MeasureTools", "version": "1.1.12", "tag": "v1.1.12",
+    "preview": {"file":"measure.png","alt":"Measure Tools displaying dimensions and angles on a rocket","kind":"Author screenshot"},
+    "asset": "MeasureTools.zip", "license": "MIT", "dependencies": [], "new": true,
+    "compatibility": "Author validated against KSA 2026.9.22.5482."
+  },
+  {
+    "id": "NavHud", "name": "NavHud", "category": "Flight", "glyph": "target",
+    "description": "Navigation and orientation cues projected around your spacecraft.",
+    "repo": "DavidK0/NavHud", "version": "1.4.0", "tag": "v1.4.0",
+    "preview": {"file":"navhud.jpg","alt":"NavHud navigation cues over the in-game flight view","kind":"Author screenshot"},
+    "asset": "NavHud-v1.4.0.zip", "license": "MIT", "dependencies": ["ModMenu"], "new": true,
+    "compatibility": "Author targets KSA 2026.6.9.4601. Compatibility with newer builds is unverified."
+  },
+  {
+    "id": "CatsGotYourCam", "name": "Cats Got Your Cam", "category": "Frameworks", "glyph": "camera",
+    "description": "Shared camera controls for mods such as Basic Hull Camera.",
+    "repo": "DavidK0/CatsGotYourCam", "version": "1.0.0", "tag": "v1.0.0",
+    "asset": "CatsGotYourCam-v1.0.0.zip", "license": "MIT", "dependencies": [], "new": true,
+    "compatibility": "Author targets KSA 2026.7.6.4939. A framework; adds no camera parts by itself."
+  },
+  {
+    "id": "BasicHullCamera", "name": "Basic Hull Camera", "category": "Parts", "glyph": "camera",
+    "description": "Add a hull-mounted camera and see the flight from your rocket.",
+    "repo": "DavidK0/BasicHullCamera", "version": "1.0.0", "tag": "v1.0.0",
+    "preview": {"file":"hullcamera.jpg","alt":"Basic Hull Camera part attached to a rocket","kind":"Author screenshot"},
+    "asset": "BasicHullCamera-v1.0.0.zip", "license": "MIT", "dependencies": ["ModMenu", "CatsGotYourCam"], "new": true,
+    "compatibility": "Author targets KSA 2026.6.9.4601. Compatibility with newer builds is unverified."
+  },
+  {
+    "id": "KSArmory", "name": "KSArmory", "category": "Parts", "glyph": "target",
+    "description": "A sandbox weapons framework with sensors, guided projectiles, and new parts.",
+    "repo": "LaurensDeV/KSArmory", "version": "0.9.4", "tag": "v0.9.4",
+    "preview": {"file":"ksarmory.png","alt":"KSArmory — Kessler Systems Armory logo","kind":"Author logo","fit":"contain"},
+    "asset": "KSArmory-0.9.4.zip", "license": "MIT", "dependencies": [], "new": true,
+    "compatibility": "Author builds against KSA 2026.9.22.5482 and documents Linux and Windows support."
+  }
+]

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
+ <defs>
+  <radialGradient id="glow"><stop stop-color="#976039" stop-opacity=".28"/><stop offset="1" stop-color="#252019" stop-opacity="0"/></radialGradient>
+  <radialGradient id="planet" cx=".3" cy=".2" r=".9"><stop stop-color="#fac18d"/><stop offset=".4" stop-color="#c88553"/><stop offset=".7" stop-color="#70452b"/><stop offset="1" stop-color="#291f18"/></radialGradient>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#be9264" opacity=".22"/></pattern>
+ </defs>
+ <rect width="720" height="400" fill="#252019"/><rect width="720" height="400" fill="url(#grid)"/>
+ <ellipse cx="435" cy="203" rx="290" ry="210" fill="url(#glow)"/>
+ <g transform="rotate(-25 415 203)" fill="none" stroke="#9d7852" stroke-width="1">
+  <ellipse cx="415" cy="203" rx="259" ry="119" opacity=".3"/><ellipse cx="415" cy="203" rx="222" ry="95" opacity=".6"/><ellipse cx="415" cy="203" rx="290" ry="141" stroke-dasharray="2 9" opacity=".4"/>
+ </g>
+ <circle cx="435" cy="197" r="94" fill="url(#planet)"/><path d="M382 123c-37 23-55 64-38 110" stroke="#ffdaad" opacity=".65" fill="none"/>
+ <g stroke="#f1c79d" opacity=".45"><path d="M580 83v10m-5-5h10M584 269v8m-4-4h8M274 86v8m-4-4h8"/></g>
+ <g fill="#e5c19d"><circle cx="596" cy="143" r="1.6"/><circle cx="630" cy="210" r="1"/><circle cx="320" cy="290" r="1"/><circle cx="313" cy="135" r="1.8"/><circle cx="490" cy="335" r="1.2"/></g>
+ <g transform="translate(267 251) rotate(49)"><path d="M0-22c14 17 14 35 0 51-14-16-14-34 0-51z" fill="#e3d8c1"/><path d="M-9 1l-12 17 13-4M9 1l12 17-13-4" fill="#c79a75"/><circle cy="-1" r="4" fill="#5c4b38"/><path d="M-4 28L0 49l4-21" fill="#fa9959"/><path d="M-1 34v31" stroke="#f4bd87" opacity=".4"/></g>
+ <circle cx="601" cy="283" r="21" fill="#4e3c2c"/><circle cx="597" cy="279" r="19" fill="#8b6b49"/><text x="568" y="352" fill="#a98b66" font-family="monospace" font-size="8" letter-spacing="2">APOAPSIS / ∞</text>
+</svg>
