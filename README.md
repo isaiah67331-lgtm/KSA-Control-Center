@@ -124,3 +124,17 @@ Use the supplied source ZIP or this source folder. It includes no game binaries,
 ## License
 
 KSA Control Center is released under the [MIT License](LICENSE). You may use, copy, modify, and share the original launcher code and artwork under its terms. Third-party packages, mod previews, and mods retain their own licenses and attribution; see [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## AI transparency
+
+[![AI Generated](https://www.aihonestybadge.com/badges/ai-generated.svg)](https://www.aihonestybadge.com/ai-generated-badge)
+
+This project uses the **AI Generated** badge because OpenAI Codex / GPT-5 created most of the application code and documentation with human direction, review, and decisions from the project owner.
+
+[AI Honesty Badge](https://www.aihonestybadge.com/ai-tools) is a voluntary transparency label, not a security audit or certification. Its labels mean:
+
+- **No AI:** People made the work without generative AI in its words, images, or code.
+- **AI Assisted:** A person led the work and AI helped along the way.
+- **AI Generated:** AI made most of the work, with a person directing and reviewing it.
+
+For this project, AI helped plan and implement the launcher, write documentation, and create tests. The project owner chose the features, reviewed the results, selected the public mod sources, and controls all releases.
